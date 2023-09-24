@@ -1,6 +1,5 @@
 {
   "name": "my-cheat-sheet",
-  "productName": "My CheatSheet",
   "version": "1.0.0",
   "NODE_ENV": "production",
   "main": "dist/main.js",
@@ -24,7 +23,7 @@
     "directories": {
       "output": "binary"
     },
-    "productName": "my-electron-boilerplate",
+    "productName": "My CheatSheet",
     "files": [
       "assets",
       "src",
