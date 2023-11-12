@@ -4,7 +4,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import { CheatItemsModel, CheatModel } from '../../model/cheatModel';
 import { warn } from 'node:console';
-
+import BrText from '../components/BrText';
 type MainSheetPops = {
   list: CheatModel[]
 }
@@ -34,7 +34,7 @@ const createTable = (data: CheatModel, index: number): JSX.Element => {
             return(
               <tr key={`tr-${i}`} className="border-b border-secondary-200 bg-secondary-100">
                 <td className="w-1/4">{m.key}</td>
-                <td className="w-1/4">{m.desc}</td>
+                <td className="w-1/4"><BrText text={m.desc}/></td>
                 <td className="w-1/2">{m.note}</td>
               </tr>
             );
